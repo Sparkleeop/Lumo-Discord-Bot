@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 Create a .env file in the project root:
 
-```
+```dotenv
 DISCORD_BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
 LOGS_CHANNEL_ID=YOUR_LOGS_CHANNEL_ID
 EXEMPT_ROLE_ID=YOUR_EXEMPT_ROLE_ID
