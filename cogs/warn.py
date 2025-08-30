@@ -4,12 +4,13 @@ from discord.ext import commands
 import json
 import os
 import datetime
+from config import LOGS
 
 class Warns(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.file = "warns.json"
-        self.log_channel_id = 1339647075784327301
+        self.log_channel_id = LOGS
         # Ensure the JSON file exists
         if not os.path.exists(self.file):
             with open(self.file, "w") as f:

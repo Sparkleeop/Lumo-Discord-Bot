@@ -2,11 +2,12 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 import datetime
+from config import LOGS
 
 class Slowmode(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.log_channel_id = 1339647075784327301
+        self.log_channel_id = LOGS
 
     async def log_action(self, embed: discord.Embed):
         log_channel = self.bot.get_channel(self.log_channel_id)

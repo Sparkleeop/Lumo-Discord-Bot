@@ -28,7 +28,7 @@ async def load_cogs():
 @bot.event
 async def on_ready():
     await bot.change_presence(
-        activity=discord.Game(name="WildBlocks MC")
+        activity=discord.Game(name="Lumo")
     )
     print(f"✅ Logged in as {bot.user}")
     await bot.tree.sync()  # Sync slash commands after cogs are loaded

@@ -21,11 +21,11 @@ class Triggers(commands.Cog):
         if self.trigger_store in content:
             embed = discord.Embed(
                 title="Our Store",
-                description="Check out our store for exclusive items!\n[Visit Store](https://store.wildblocks.fun)",
+                description="Check out our store for exclusive items!\n[Visit Store](https://store.store.yourstore.com)",
                 color=discord.Color.blue()
             )
             # You can include custom emojis in the text as long as the bot has access to them.
-            embed.add_field(name="Store", value="<:dollar:1335169789332688948> Get yours today!", inline=False)
+            embed.add_field(name="Store", value="Get yours today!", inline=False)
             await message.channel.send(embed=embed)
 
         # Trigger for the server IP embed
@@ -35,7 +35,7 @@ class Triggers(commands.Cog):
                 description="Join our server using the following IP:",
                 color=discord.Color.green()
             )
-            embed.add_field(name="IP", value="<:joystick:1335168660096159765> play.wildblocks.fun", inline=False)
+            embed.add_field(name="IP", value="play.yourserver.com", inline=False)
             await message.channel.send(embed=embed)
 
         # Trigger for the server info embed
@@ -45,7 +45,7 @@ class Triggers(commands.Cog):
                 description="Learn more about our server and what we offer.",
                 color=discord.Color.purple()
             )
-            embed.add_field(name="Info", value="<:icecube:1335169794382630923> Visit our info page for details.", inline=False)
+            embed.add_field(name="Info", value="Visit our info page for details.", inline=False)
             await message.channel.send(embed=embed)
 
         # Process other commands if they exist

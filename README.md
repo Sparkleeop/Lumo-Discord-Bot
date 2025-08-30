@@ -1,1 +1,1 @@
-# wbmc-utils-bot
+# Lumo Discord Bot

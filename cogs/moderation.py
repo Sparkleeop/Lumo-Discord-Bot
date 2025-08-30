@@ -3,12 +3,13 @@ from discord import app_commands
 from discord.ext import commands
 import asyncio
 import datetime
+from config import LOGS
 
 class Moderation(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         # Channel ID where moderation logs will be sent.
-        self.log_channel_id = 1339647075784327301
+        self.log_channel_id = LOGS
 
     def log_action(self, embed: discord.Embed) -> None:
         """Helper to send a log embed to the moderation log channel."""

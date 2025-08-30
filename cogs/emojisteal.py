@@ -1,12 +1,10 @@
 import discord
-
 from discord.ext import commands
-
 import aiohttp
-
+from config import LOGS
 import re
 
-LOG_CHANNEL_ID = 1339647075784327301  # Log channel ID
+LOG_CHANNEL_ID = LOGS
 
 class EmojiStealer(commands.Cog):
 

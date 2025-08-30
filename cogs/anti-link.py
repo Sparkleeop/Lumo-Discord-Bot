@@ -3,12 +3,13 @@ from discord.ext import commands
 import re
 import datetime
 import asyncio
+from config import LOGS, EXEMPT_ROLE
 
 class AntiLink(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.exempt_role_id = 1339688281922736209  # Role ID exempt from anti-link
-        self.log_channel_id = 1339647075784327301  # Log channel ID
+        self.exempt_role_id = EXEMPT_ROLE
+        self.log_channel_id = LOGS
         self.muted_role_name = "Muted"  # Name of the mute role
         # A basic regex pattern to detect links
         self.link_pattern = re.compile(r'https?://\S+')

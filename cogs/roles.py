@@ -1,11 +1,12 @@
 import discord
 from discord.ext import commands
 import datetime
+from config import LOGS
 
 class RoleManagement(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.log_channel_id = 1339647075784327301  # Log channel ID
+        self.log_channel_id = LOGS
 
     async def log_action(self, embed: discord.Embed):
         """Helper function to send log embed to the specified log channel."""
