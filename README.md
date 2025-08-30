@@ -37,31 +37,39 @@ It comes with moderation tools, utility commands, role management, and fun featu
 ```bash
 git clone https://github.com/Sparkleeop/Lumo-Discord-Bot
 cd Lumo-Discord-Bot
+```
 
-2. Create a virtual environment (recommended)
+### 2. Create a virtual environment (recommended)
 
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux/macOS
 venv\Scripts\activate      # Windows
+```
 
-3. Install dependencies
+### 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-4. Configure environment variables
+### 4. Configure environment variables
 
 Create a .env file in the project root:
 
+```bash
 DISCORD_BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
 LOGS_CHANNEL_ID=YOUR_LOGS_CHANNEL_ID
 EXEMPT_ROLE_ID=YOUR_EXEMPT_ROLE_ID
 DM_ROLE_ID=YOUR_DM_ROLE_ID
 WELCOME_CHANNEL_ID=YOUR_WELCOME_CHANNEL_ID
+```
 
 5. Run the bot
 
+```bash
 python bot.py
-
+```
 
 ---
 
