@@ -1,5 +1,11 @@
 # 🌙 Lumo Discord Bot
 
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![License](https://img.shields.io/github/license/Sparkleeop/Lumo-Discord-Bot?color=green)](./LICENSE)
+[![Stars](https://img.shields.io/github/stars/Sparkleeop/Lumo-Discord-Bot?style=social)](https://github.com/Sparkleeop/Lumo-Discord-Bot/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/Sparkleeop/Lumo-Discord-Bot?color=red)](https://github.com/Sparkleeop/Lumo-Discord-Bot/commits/main)
+[![Language](https://img.shields.io/github/languages/top/Sparkleeop/Lumo-Discord-Bot?color=yellow)](https://github.com/Sparkleeop/Lumo-Discord-Bot)
+
 Lumo is a modular, feature-rich Discord bot built using **[discord.py](https://discordpy.readthedocs.io/en/stable/)**.  
 It comes with moderation tools, utility commands, role management, and fun features, all organized in cogs.
 
@@ -22,12 +28,13 @@ It comes with moderation tools, utility commands, role management, and fun featu
 
 ## 📂 Project Structure
 
+```
 ├── bot.py             # Main entry point 
 ├── config.py          # Bot configuration 
 ├── requirements.txt   # Python dependencies 
 ├── cogs/              # Command modules
-│   
 └── ...
+```
 
 ---
 
@@ -57,7 +64,7 @@ pip install -r requirements.txt
 
 Create a .env file in the project root:
 
-```bash
+```
 DISCORD_BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
 LOGS_CHANNEL_ID=YOUR_LOGS_CHANNEL_ID
 EXEMPT_ROLE_ID=YOUR_EXEMPT_ROLE_ID
@@ -101,7 +108,7 @@ Please follow clean code practices and ensure all new features are modular (plac
 
 📝 License
 
-This project is licensed under the MIT License – see LICENSE for details.
+This project is licensed under the MIT License, see LICENSE for details.
 
 
 ---
